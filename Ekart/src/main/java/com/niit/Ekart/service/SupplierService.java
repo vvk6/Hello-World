@@ -1,19 +1,8 @@
 package com.niit.Ekart.service;
+import com.niit.Ekart.model.SupplierModel;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+public interface SupplierService {
 
-
-import com.niit.Ekart.model.CategoriesModel;
-
-@Service
-public class {
-	@Autowired
-	UserDAO userDAO;
-	public void insertSignupModel(SignupModel u)
-	{
-		userDAO.insertSignupModel(u);
-	}
-	
+public void insertSupplierModel(SupplierModel u);
 
 }

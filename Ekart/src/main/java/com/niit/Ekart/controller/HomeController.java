@@ -10,12 +10,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.Ekart.model.SignupModel;
+import com.niit.Ekart.service.CategoryService;
+import com.niit.Ekart.service.SupplierService;
 import com.niit.Ekart.service.UserService;
 
 @Controller
 public class HomeController {
 	@Autowired
 	UserService us;
+	@Autowired
+	CategoryService cs;
+	@Autowired
+	SupplierService ss;
 	
 	@RequestMapping("/")
 	public ModelAndView getHomePage() {
@@ -49,11 +55,35 @@ public class HomeController {
 		ModelAndView mv=new ModelAndView("login");
 		return mv;
 	}
-	@RequestMapping("/customercare")
-	public ModelAndView customercare() {
+	@RequestMapping("/categories")
+	public ModelAndView categories() {
 
 		
-		ModelAndView mv=new ModelAndView("customercare");
+		ModelAndView mv=new ModelAndView("category","command",new CategoryModel());
+		return mv;
+	}
+	@RequestMapping("/addcategory")
+	public ModelAndView addCategory(@ModelAttribute("CategoryModel") CategoryModel c ) {
+	System.out.println("in add category");
+        cs.insertCategoryModel(c);
+		
+		ModelAndView mv=new ModelAndView("category","command",new CategoryModel());
+		return mv;
+	}
+	
+	@RequestMapping("/suppliers")
+	public ModelAndView suppliers() {
+
+		
+		ModelAndView mv=new ModelAndView("supplier","command",new SupplierModel());
+		return mv;
+	}
+	@RequestMapping("/addsupplier")
+	public ModelAndView addSupplier(@ModelAttribute("SupplierModel") SupplierModel c ) {
+	System.out.println("in add supplier");
+        ss.insertSupplierModel(c);
+		
+		ModelAndView mv=new ModelAndView("supplier","command",new SupplierModel());
 		return mv;
 	}
 	

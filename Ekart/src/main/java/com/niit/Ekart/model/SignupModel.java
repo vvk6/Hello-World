@@ -9,7 +9,7 @@ import javax.persistence.Table;
 //import org.hibernate.annotations.Table;
 
 @Entity
-@Table(name="Customer")
+@Table(name="customer")
 public class SignupModel {
 	
 	@Id

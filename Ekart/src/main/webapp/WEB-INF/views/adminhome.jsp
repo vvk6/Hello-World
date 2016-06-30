@@ -10,7 +10,7 @@
 <h4>Welcome Admin</h4>
 
 <a href="categories">Categories</a><br>
-<a href="suppliers]">Suppliers</a><br>
+<a href="suppliers">Suppliers</a><br>
 <a href="Products">Products</a><br>
 
 

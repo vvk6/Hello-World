@@ -83,11 +83,11 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="C:\Users\Srikanth\Desktop\pics\download (1).jpg" alt="book" width="460" height="145">
+        <img src="resources/lap.png" alt="book" width="460" height="145">
       </div>
 
       <div class="item">
-        <img src="C:\Users\Srikanth\Desktop\pics\download (2).jpg" alt="book" width="460" height="145">
+        <img src="C:\Users\Srikanth\Desktop\pics\lap.png" alt="book" width="460" height="145">
       </div>
     
       <div class="item">
@@ -95,7 +95,7 @@
       </div>
 
       <div class="item">
-        <img src="C:\Users\Srikanth\Desktop\pics\images.jpg" alt="book" width="460" height="145">
+        <img src="C:\Users\Srikanth\Desktop\pics\lap.png" alt="book" width="460" height="145">
       </div>
     </div>
 

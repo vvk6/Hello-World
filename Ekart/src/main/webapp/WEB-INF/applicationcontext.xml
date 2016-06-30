@@ -27,7 +27,13 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
     <property name="annotatedClasses">
             <list>
                 <value>com.niit.Ekart.model.SignupModel</value>
+                 <value>com.niit.Ekart.model.CategoryModel</value>
+                 <value>com.niit.Ekart.model.SupplierModel</value>
+                 
             </list>
+            
+               
+           
     </property>
 </bean>
 <context:component-scan base-package="com.niit.Ekart.controller"/>
