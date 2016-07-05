@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <title>MyBookWorld/Home</title>
   <meta charset="utf-8">
@@ -7,16 +7,19 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
   <style>
+  .
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width: 50%;
       margin: auto;
   }
     
   </style>
 </head>
-<body>
+<body background="resources/images/images.jpg">
+
   
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -42,7 +45,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Type <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">E-Book</a></li>
+            <li><a href="NewFile.jsp">E-Book</a></li>
     
             
             <li role="separator" class="divider"></li>
@@ -83,19 +86,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="resources/lap.png" alt="book" width="460" height="145">
+        <img src="C:\Users\Srikanth\Desktop\pics\1.jpg" alt="book" width="600" height="145">
       </div>
 
       <div class="item">
-        <img src="C:\Users\Srikanth\Desktop\pics\lap.png" alt="book" width="460" height="145">
+        <img src="C:\Users\Srikanth\Desktop\pics\2.jpg" alt="book" width="800" height="145">
       </div>
     
       <div class="item">
-        <img src="C:\Users\Srikanth\Desktop\pics\download.jpg" alt="book" width="460" height="145">
+        <img src="C:\Users\Srikanth\Desktop\pics\3.jpg" alt="book" width="800" height="145">
       </div>
 
       <div class="item">
-        <img src="C:\Users\Srikanth\Desktop\pics\lap.png" alt="book" width="460" height="145">
+        <img src="C:\Users\Srikanth\Desktop\pics\4.jpg" alt="book" width="800" height="145">
       </div>
     </div>
 
@@ -112,21 +115,21 @@
 </div>
 <div class="container">
            <div class="row">  
-           <div class="col-md-6"> 
-  <img src="C:\Users\Srikanth\Desktop\pics\1.jpg" class="img-thumbnail" alt="book 1" width="154" height="136">
+           <div class="col-md-12"> 
+  <img src="C:\Users\Srikanth\Desktop\pics\5.jpg" class="img-thumbnail" alt="book 1" width="200" height="136">
   
   
    
-    <img src="C:\Users\Srikanth\Desktop\pics\2.jpg" class="img-thumbnail" alt="book 2" width="154" height="136">
+    <img src="C:\Users\Srikanth\Desktop\pics\6.jpg" class="img-thumbnail" alt="book 2" width="200" height="136">
     
     
     
-     <img src="C:\Users\Srikanth\Desktop\pics\3.jpg" class="img-thumbnail" alt="book 3" width="184" height="200">
+     <img src="C:\Users\Srikanth\Desktop\pics\7.jpg" class="img-thumbnail" alt="book 3" width="200" height="200">
     
     
     
     
-    <img src="C:\Users\Srikanth\Desktop\pics\4.jpg" class="img-thumbnail" alt=" boook 4" width="184" height="200"> 
+    <img src="C:\Users\Srikanth\Desktop\pics\8.jpg" class="img-thumbnail" alt=" boook 4" width="200" height="200"> 
   
   </div>
   </div>

@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page isELIgnored="false" %>
@@ -20,34 +19,7 @@
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/mystyle.css"/>">-->
 </head>
 <body>
-<form:form method="POST" action="addcategory">
-<table>
-<tr>
-  <td>Category ID :</td>
-           <td><form:input path="Catid" /></td>
-        </tr>
-     <tr>
-        <td>Name :</td>
-           <td><form:input path="Name" /></td>
-        </tr>
-<tr>
-        <td>Description :</td>
-        <td><form:input path="Description" /></td>
-    </tr>
-    <tr>
-  
-    
-    <tr>
-        <td colspan="2"><input type="submit" value="Add Category"></td>
-    </tr>
-</table>
-</form:form>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 
 
@@ -55,11 +27,15 @@
 
   <div>
 
-<h2><p style="float:left;">List Of Categories!</p></h2>
+<h2><p style="float:left;">List Of Products!</p></h2>
     	
  <p style="text-align: justify;">
   		<div ng-app="myApp" ng-controller="namesCtrl">
-	
+	<form>
+		<input type="text" ng-model="search">&nbsp&nbsp
+		<span class="glyphicon glyphicon-search"></span>
+		
+	</form>
 	<table class="table table-striped">
 	<tr>		
 		<th>NAME</th>
@@ -83,10 +59,10 @@
 	});
 	</script>
 	</div>
-  	</p>
+  	
 	
 </div>
-</div>
+
 
          
     </body>

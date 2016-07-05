@@ -8,10 +8,14 @@
 </head>
 <body>
 <h4>Welcome Admin</h4>
-
-<a href="categories">Categories</a><br>
-<a href="suppliers">Suppliers</a><br>
-<a href="Products">Products</a><br>
+<ul>
+<li><a href="categories">Add Categories</a><br></li>
+<li><a href="suppliers">Add Suppliers</a><br></li>
+<li><a href="Products">Add Products</a><br></li>
+<li><a href="viewproduct">View Products List</a><br></li>
+<li><a href="viewsupplier">View Supplier List</a><br></li>
+<li><a href="viewcategory">View Categories List</a><br></li>
+</ul>
 
 
 </body>

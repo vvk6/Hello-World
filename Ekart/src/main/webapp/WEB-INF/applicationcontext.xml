@@ -28,6 +28,7 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
             <list>
                 <value>com.niit.Ekart.model.SignupModel</value>
                  <value>com.niit.Ekart.model.CategoryModel</value>
+                  <value>com.niit.Ekart.model.ProductModel</value>
                  <value>com.niit.Ekart.model.SupplierModel</value>
                  
             </list>

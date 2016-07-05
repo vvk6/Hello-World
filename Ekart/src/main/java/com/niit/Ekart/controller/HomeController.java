@@ -1,6 +1,6 @@
 package com.niit.Ekart.controller;
-
-
+import java.util.List;
+import com.google.gson.Gson;
 import com.niit.Ekart.model.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,7 @@ import com.niit.Ekart.model.SignupModel;
 import com.niit.Ekart.service.CategoryService;
 import com.niit.Ekart.service.SupplierService;
 import com.niit.Ekart.service.UserService;
+import com.niit.Ekart.service.ProductService;
 
 @Controller
 public class HomeController {
@@ -22,11 +23,11 @@ public class HomeController {
 	CategoryService cs;
 	@Autowired
 	SupplierService ss;
+	  @Autowired
+		ProductService ps;
 	
 	@RequestMapping("/")
-	public ModelAndView getHomePage() {
-
-	
+	public ModelAndView getHomePage() {	
 		ModelAndView mv=new ModelAndView("index");
 		return mv;
 	}
@@ -86,6 +87,45 @@ public class HomeController {
 		ModelAndView mv=new ModelAndView("supplier","command",new SupplierModel());
 		return mv;
 	}
+	
+
+@RequestMapping("/Products")
+public ModelAndView product() {
+
+	return new ModelAndView("product","command",new ProductModel());
+}
+@RequestMapping("/addproduct")
+public ModelAndView addProduct(@ModelAttribute("ProductModel") ProductModel pm ) {
+System.out.println("in add product");
+    ps.insertProductModel(pm);		
+	ModelAndView mv=new ModelAndView("product","command",new ProductModel());
+	return mv;
+}
+@RequestMapping("/viewproduct")
+public ModelAndView viewproducts()
+{
+	List<ProductModel> arr=ps.getProductList();
+	Gson gson=new Gson();
+	String json=gson.toJson(arr);
+	return new ModelAndView("productslist","data",gson.toJson(arr));
+}
+@RequestMapping("/viewsupplier")
+public ModelAndView viewsuppliers()
+{
+	List<SupplierModel> arr=ss.getSupplierList();
+	Gson gson=new Gson();
+	String json=gson.toJson(arr);
+	return new ModelAndView("supplierlist","data",gson.toJson(arr));
+}
+@RequestMapping("/viewcategory")
+public ModelAndView viewcategories()
+{
+	List<CategoryModel> arr=cs.getCategoryList();
+	Gson gson=new Gson();
+	String json=gson.toJson(arr);
+	return new ModelAndView("categorylist","data",gson.toJson(arr));
+}
+
 	
 	@RequestMapping("/adminhome")
 	public ModelAndView adminhome(){
